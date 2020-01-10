@@ -1,0 +1,21 @@
+<!--mp/pages/me/me.wxml-->
+<text>mp/pages/me/me.wxml</text>
+<view>
+  <view>云函数</view>
+  <button type="primary" bindtap="sconCode">添加图书</button>
+  <button type="primary" bindtap="getOpenId">获取用户ID</button>
+   <button type="primary" bindtap="batchDelete">多个删除数据</button>
+
+  <view>云数据库</view>
+  <button bindtap="insert">插入数据</button>
+  <button bindtap="update">更新数据</button>
+  <button bindtap="search">查找数据</button>
+  <button bindtap="delete">删除数据</button>
+  <view>云存储</view>
+  <button bindtap="upload">上传图片</button>
+  <button bindtap="getFile">图片展示</button>
+  <block wx:for="{{images}}" wx:key="_id">
+  <image src="{{item.fileID}}"></image>
+  <button size="mini" data-fileid="{{item.fileID}}" bindtap="downloadFile">文件下载</button>
+  </block>
+</view>

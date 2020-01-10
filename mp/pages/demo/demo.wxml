@@ -1,0 +1,6 @@
+<!--pages/demo/demo.wxml-->
+<view>
+<text>pages/demo/demo.wxml</text>
+<camera device-position="back" style="width:100%;height:300px;"></camera>
+<button bindtap="takePhoto">paizhao</button>
+</view>
